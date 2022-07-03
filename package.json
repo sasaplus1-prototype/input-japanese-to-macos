@@ -1,0 +1,6 @@
+{
+  "private": true,
+  "devDependencies": {
+    "selenium-webdriver": "^4.3.0"
+  }
+}
