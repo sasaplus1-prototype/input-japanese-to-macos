@@ -15,6 +15,7 @@ async function main() {
   await driver.findElement(By.id('editor')).click();
   await driver.findElement(By.id('editor')).sendKeys(Key.chord('\u0015'));
   await driver.findElement(By.id('editor')).sendKeys('konnnitiwa');
+  await driver.findElement(By.id('editor')).sendKeys('こんにちは');
 
   let encodedString = await driver.takeScreenshot();
   await fs.writeFileSync('./image.png', encodedString, 'base64');
